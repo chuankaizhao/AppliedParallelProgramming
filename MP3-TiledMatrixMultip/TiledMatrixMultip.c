@@ -28,14 +28,14 @@ __global__ void matrixMultiplyShared(float *A, float *B, float *C,
   int Row = by * TILE_WIDTH + ty;
   int Col = bx * TILE_WIDTH + tx;
   float Pvalue = 0.0;
-  int maxM = numAColumns / TILE_WIDTH;
+  int maxM = numAColumns + TILE_WIDTH - 1 / TILE_WIDTH;
   for (int m=0; m < maxM; ++m){
     if ((Row < numCRows) && (m*TILE_WIDTH + tx < numAColumns)){
       subTileA[ty][tx] = A[Row*numAColumns + m*TILE_WIDTH + tx];
     }
     else
       subTileA[ty][tx] = 0;
-    if ((Col < numCColumns) && (m*TILE_WIDTH + ty) < numBColumns){
+    if ((Col < numCColumns) && (m*TILE_WIDTH + ty) < numBRows){
       subTileB[ty][tx] = B[Col + (m*TILE_WIDTH + ty)*numBColumns];
     }
     else 
