@@ -1,3 +1,5 @@
+// @Chuankai Zhao
+// Email: czhao37@illinois.edu
 // MP Reduction
 // Given a list (lst) of length n
 // Output its sum = lst[0] + lst[1] + ... + lst[n-1];
