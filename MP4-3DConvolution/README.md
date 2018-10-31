@@ -1,7 +1,13 @@
 # MP-4 3D Convolution
 
-Implementation of a 3D convolution using constant memory for the kernel (mask filter) and 3D shared memory tiling. </br>
+## Objective
 
-The program launches 3D CUDA grid and blocks, where each thread is responsible for computing a single element of the output. </br> 
+The purpose of this lab is to implement a 3D convolution using constant memory for the kernel and 3D shared memory tiling. 
 
-Input and output formats: float inputData[] = { z_size, y_size, x_size, float1, float2, ... } </br> 
+## Instructions
+
+- Edit the code to implement a 3D convolution with a 3x3x3 kernel in constant memory and a 3D shared-memory tiling.
+
+- Edit the code to launch the kernel you implemented. The function should launch 3D CUDA grid and blocks, where each thread is responsible for computing a single element of the output.
+
+- Answer the questions found in the questions tab.
