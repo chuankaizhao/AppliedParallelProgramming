@@ -6,7 +6,7 @@ The purpose of this lab is to implement a tiled dense matrix multiplication rout
 
 ## Instruction
 
-Edit the code in the “Code” tab to perform the following:
+Edit the code to perform the following:
 
 - allocate device memory
 - copy host memory to device
