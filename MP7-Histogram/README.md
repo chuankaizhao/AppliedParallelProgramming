@@ -7,12 +7,12 @@ The purpose of this lab is to implement an efficient histogramming equalization 
 
 Edit the code in the code tab to perform the following:
 
--Cast the image to unsigned char
+- Cast the image to unsigned char
 
--Convert the image from RGB to Gray Scale. You will find one of the lectures and textbook chapters helpful.
+- Convert the image from RGB to Gray Scale. You will find one of the lectures and textbook chapters helpful.
 
--Compute the histogram of the image
+- Compute the histogram of the image
 
--Compute the scan (prefix sum) of the histogram to arrive at the histogram equalization function
+- Compute the scan (prefix sum) of the histogram to arrive at the histogram equalization function
 
--Apply the equalization function to the input image to get the color corrected image
+- Apply the equalization function to the input image to get the color corrected image
